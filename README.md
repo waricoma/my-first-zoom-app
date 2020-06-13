@@ -28,6 +28,12 @@ yarn install
 yarn run start
 ```
 
+## Run tests
+
+```sh
+yarn run test
+```
+
 ## Author
 
 👤 **waricoma <waricoma@devne.co>**

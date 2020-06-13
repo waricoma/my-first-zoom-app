@@ -5,6 +5,6 @@ import * as zoomService from '../../services/zoom';
 export class DevController extends Controller {
   @Get('/create')
   public async create(): Promise<string> {
-    return zoomService.run();
+    return zoomService.createNextWeekRoom();
   }
 }

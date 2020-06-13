@@ -20,7 +20,7 @@ export const nextWeekRoomOpCreator = (
   return roomOp;
 };
 
-export const run = async (): Promise<string> => {
+export const createNextWeekRoom = async (): Promise<string> => {
   L.info('create zoom room');
 
   const roomOp = nextWeekRoomOpCreator(
