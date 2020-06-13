@@ -56,8 +56,8 @@
   },
   "devDependencies": {
     "@textlint/textlint-plugin-markdown": "5.1.12",
-    "@typescript-eslint/eslint-plugin": "2.31.0",
-    "@typescript-eslint/parser": "2.31.0",
+    "@typescript-eslint/eslint-plugin": "2.34.0",
+    "@typescript-eslint/parser": "2.34.0",
     "add-text-to-markdown": "2.0.0",
     "commitizen": "4.1.2",
     "cz-emoji": "1.2.1",
