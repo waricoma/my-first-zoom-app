@@ -1,3 +1,5 @@
+import fs from 'fs';
+import packageJSON from './package.json';
 import s from 'shelljs';
 import config from './tsconfig.json';
 const outDir = config.compilerOptions.outDir;
@@ -7,6 +9,7 @@ import {
   RoutesConfig,
   SwaggerConfig,
 } from 'tsoa';
+import apiSpecConverter from 'api-spec-converter';
 
 s.rm('-rf', outDir);
 s.mkdir(outDir);
@@ -32,4 +35,30 @@ s.cp('.env', `${outDir}/.env`);
   // Run those
   await generateSwaggerSpec(swaggerOptions, routeOptions);
   await generateRoutes(routeOptions, swaggerOptions);
+  
+  // Add title and version to info.
+  const swaggerJSON = require('./server/common/swagger.json');
+  swaggerJSON.info.title = packageJSON.name;
+  swaggerJSON.info.version = packageJSON.version;
+  fs.writeFileSync('./server/common/swagger.json', JSON.stringify(swaggerJSON, null, 2));
+
+  // Convert to JSON from YAML
+  apiSpecConverter.convert(
+    {
+      from: 'openapi_3',
+      to: 'openapi_3',
+      source: './server/common/swagger.json',
+    },
+    (err, converted) => {
+      if (err) {
+        throw new Error(err);
+      }
+
+      fs.writeFile('./server/common/swagger.yaml', converted.stringify({ syntax: 'yaml', order: 'openapi' }), err => {
+        if (err) {
+          throw err;
+        }
+      });
+    }
+  );
 })();

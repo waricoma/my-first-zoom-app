@@ -1,0 +1,27 @@
+openapi: 3.0.0
+info:
+  title: my-first-zoom-app_express
+  version: 1.0.0
+servers:
+  - url: 'https://localhost:3000/api'
+paths:
+  /zoom/create:
+    get:
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: string
+          description: Ok
+      security: []
+      operationId: Create
+components:
+  parameters: {}
+  responses: {}
+  examples: {}
+  headers: {}
+  requestBodies: {}
+  schemas: {}
+  securitySchemes: {}
