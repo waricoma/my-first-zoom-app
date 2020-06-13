@@ -1,91 +1,64 @@
-# express
+# Welcome to my-first-zoom-app_express 👋
+![Version](https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000)
+![Prerequisite](https://img.shields.io/badge/yarn-%3E%3D1.22.4-blue.svg)
+![Prerequisite](https://img.shields.io/badge/node-%3E%3D12.16.2-blue.svg)
+[![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](https://github.com/waricoma/my-first-zoom-app#readme)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/waricoma/my-first-zoom-app/graphs/commit-activity)
+[![License: MIT](https://img.shields.io/github/license/waricoma/my-first-zoom-app_express)](https://github.com/waricoma/my-first-zoom-app/blob/master/LICENSE)
+[![Twitter: waritocomatta](https://img.shields.io/twitter/follow/waritocomatta.svg?style=social)](https://twitter.com/waritocomatta)
 
-My cool TypeScript app
+> my-first-zoom-app_express
 
-## Quick Start
+### 🏠 [Homepage](https://github.com/waricoma/my-first-zoom-app#readme)
 
-Get started developing...
+## Prerequisites
 
-```shell
-# install deps
-npm install
+- yarn >=1.22.4
+- node >=12.16.2
 
-# run in development mode
-npm run dev
+## Install
 
-# run tests
-npm run test
+```sh
+yarn install
 ```
 
----
+## Usage
 
-## Install Dependencies
-
-Install all package dependencies (one time operation)
-
-```shell
-npm install
+```sh
+yarn run start
 ```
 
-## Run It
-#### Run in *development* mode:
-Runs the application is development mode. Should not be used in production
+## Run tests
 
-```shell
-npm run dev
+```sh
+yarn run test
 ```
 
-or debug it
+## Author
 
-```shell
-npm run dev:debug
-```
+👤 **waricoma <waricoma@devne.co>**
 
-#### Run in *production* mode:
+* Website: https://wantedly.com/users/18472356
+* Twitter: [@waritocomatta](https://twitter.com/waritocomatta)
+* Github: [@waricoma](https://github.com/waricoma)
+* LinkedIn: [@motone-adachi-b92955145](https://linkedin.com/in/motone-adachi-b92955145)
 
-Compiles the application and starts it in production production mode.
+## 🤝 Contributing
 
-```shell
-npm run compile
-npm start
-```
+Contributions, issues and feature requests are welcome!
 
-## Test It
+Feel free to check [issues page](https://github.com/waricoma/my-first-zoom-app/issues). You can also take a look at the [contributing guide](https://github.com/waricoma/my-first-zoom-app/blob/master/CONTRIBUTING.md).
 
-Run the Mocha unit tests
+## Show your support
 
-```shell
-npm test
-```
-
-or debug them
-
-```shell
-npm run test:debug
-```
-
-## Try It
-* Open you're browser to [http://localhost:3000](http://localhost:3000)
-* Invoke the `/examples` endpoint 
-  ```shell
-  curl http://localhost:3000/api/v1/examples
-  ```
+Give a ⭐️ if this project helped you!
 
 
-## Debug It
+## 📝 License
 
-#### Debug the server:
+Copyright © 2020 [waricoma <waricoma@devne.co>](https://github.com/waricoma).
 
-```
-npm run dev:debug
-```
+This project is [MIT](https://github.com/waricoma/my-first-zoom-app/blob/master/LICENSE) licensed.
 
-#### Debug Tests
-
-```
-npm run test:debug
-```
-
-#### Debug with VSCode
-
-Add these [contents](https://github.com/cdimascio/generator-express-no-stress/blob/next/assets/.vscode/launch.json) to your `.vscode/launch.json` file
+***
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
