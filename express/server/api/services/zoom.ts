@@ -2,19 +2,31 @@ import L from '../../common/logger';
 import axios from 'axios';
 import moment from 'moment';
 
-export const run = async (): Promise<string> => {
-  L.info('create zoom room');
-
+export const nextWeekRoomOpCreator = (
+  topic?: string,
+  timeZone?: string
+): { [key: string]: string | { [key: string]: string } } => {
   const roomOp = {};
 
-  roomOp['topic'] = 'by my-first-zoom-app';
+  roomOp['topic'] = topic || 'by my-first-zoom-app';
   roomOp['type'] = '2';
   roomOp['start_time'] = moment()
     .add(moment.duration(1, 'weeks'))
     .format('YYYY-MM-DDThh:mm:ss');
-  roomOp['timezone'] = process.env.TIMEZONE || 'Asia/Tokyo';
+  roomOp['timezone'] = timeZone || 'Asia/Tokyo';
   roomOp['settings'] = {};
   roomOp['settings']['use_pmi'] = 'false';
+
+  return roomOp;
+};
+
+export const run = async (): Promise<string> => {
+  L.info('create zoom room');
+
+  const roomOp = nextWeekRoomOpCreator(
+    'by my-first-zoom-app',
+    process.env.TIMEZONE
+  );
 
   try {
     const res = await axios.post(

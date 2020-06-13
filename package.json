@@ -27,6 +27,7 @@
   "scripts": {
     "start": "cd express && yarn install && yarn run build && yarn run start",
     "commit": "git cz",
+    "test": "cd express && yarn run test",
     "document": "yarn run document-express # & yarn run document-vue",
     "readme": "npx readme-md-generator && yarn run readme-express # && yarn run readme-vue",
     "readme-express": "cd ./express && npx readme-md-generator",

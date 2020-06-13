@@ -35,12 +35,23 @@ s.cp('.env', `${outDir}/.env`);
   // Run those
   await generateSwaggerSpec(swaggerOptions, routeOptions);
   await generateRoutes(routeOptions, swaggerOptions);
-  
+
   // Add title and version to info.
-  const swaggerJSON = require('./server/common/swagger.json');
-  swaggerJSON.info.title = packageJSON.name;
-  swaggerJSON.info.version = packageJSON.version;
-  fs.writeFileSync('./server/common/swagger.json', JSON.stringify(swaggerJSON, null, 2));
+  try {
+    const swaggerJSON = JSON.parse(
+      fs.readFileSync('./server/common/swagger.json', 'utf-8')
+    );
+    swaggerJSON.info.title = packageJSON.name;
+    swaggerJSON.info.version = packageJSON.version;
+    fs.writeFileSync(
+      './server/common/swagger.json',
+      JSON.stringify(swaggerJSON, null, 2)
+    );
+  } catch (err) {
+    if (err) {
+      throw err;
+    }
+  }
 
   // Convert to JSON from YAML
   apiSpecConverter.convert(
@@ -54,11 +65,15 @@ s.cp('.env', `${outDir}/.env`);
         throw new Error(err);
       }
 
-      fs.writeFile('./server/common/swagger.yaml', converted.stringify({ syntax: 'yaml', order: 'openapi' }), err => {
-        if (err) {
-          throw err;
+      fs.writeFile(
+        './server/common/swagger.yaml',
+        converted.stringify({ syntax: 'yaml', order: 'openapi' }),
+        (err) => {
+          if (err) {
+            throw err;
+          }
         }
-      });
+      );
     }
   );
 })();
