@@ -60,7 +60,7 @@
     "husky": "3.1.0",
     "markdownlint": "0.20.3",
     "markdownlint-cli": "0.23.1",
-    "nodemon-webpack-plugin": "4.3.1",
+    "nodemon-webpack-plugin": "4.3.2",
     "readme-md-generator": "1.0.0",
     "textlint": "11.6.3",
     "textlint-filter-rule-comments": "1.2.2",
