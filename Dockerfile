@@ -15,6 +15,6 @@ RUN yarn install
 
 RUN cd /work/express && yarn install
 
-# RUN cd /work/vue && yarn install
+RUN cd /work/nuxt && yarn install
 
 EXPOSE 3000

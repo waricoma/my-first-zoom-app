@@ -2,7 +2,7 @@ version: "3"
 volumes:
   app_pkg:
   express_pkg:
-  # vue_pkg:
+  nuxt_pkg:
 services:
   app:
     build:
@@ -17,7 +17,7 @@ services:
       - ./:/work
       - app_pkg:/work/node_modules
       - express_pkg:/work/express/node_modules
-      # - vue_pkg:/work/vue/node_modules
+      - nuxt_pkg:/work/vue/node_modules
     container_name: app
 
   # postgres:
