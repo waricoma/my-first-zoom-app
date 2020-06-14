@@ -15,7 +15,7 @@
 
 ▸ **createNextWeekRoom**(): *Promise‹void›*
 
-*Defined in [server/api/services/zoom.ts:23](https://github.com/waricoma/my-first-zoom-app/blob/ded8f9a/express/server/api/services/zoom.ts#L23)*
+Defined in server/api/services/zoom.ts:23
 
 **Returns:** *Promise‹void›*
 
@@ -25,7 +25,7 @@ ___
 
 ▸ **nextWeekRoomOpCreator**(`topic?`: string, `timeZone?`: string): *object*
 
-*Defined in [server/api/services/zoom.ts:5](https://github.com/waricoma/my-first-zoom-app/blob/ded8f9a/express/server/api/services/zoom.ts#L5)*
+Defined in server/api/services/zoom.ts:5
 
 **Parameters:**
 

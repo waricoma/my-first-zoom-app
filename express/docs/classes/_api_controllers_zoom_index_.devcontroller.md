@@ -25,7 +25,7 @@
 
 ▸ **create**(): *Promise‹object›*
 
-*Defined in [server/api/controllers/zoom/index.ts:7](https://github.com/waricoma/my-first-zoom-app/blob/ded8f9a/express/server/api/controllers/zoom/index.ts#L7)*
+Defined in server/api/controllers/zoom/index.ts:7
 
 **Returns:** *Promise‹object›*
 

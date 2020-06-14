@@ -14,4 +14,4 @@
 
 • **port**: *number* = parseInt(process.env.PORT)
 
-*Defined in [server/index.ts:10](https://github.com/waricoma/my-first-zoom-app/blob/ded8f9a/express/server/index.ts#L10)*
+Defined in server/index.ts:10

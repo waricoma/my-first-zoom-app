@@ -17,4 +17,4 @@
   level: process.env.LOG_LEVEL || 'debug',
 })
 
-*Defined in [server/common/logger.ts:3](https://github.com/waricoma/my-first-zoom-app/blob/ded8f9a/express/server/common/logger.ts#L3)*
+Defined in server/common/logger.ts:3

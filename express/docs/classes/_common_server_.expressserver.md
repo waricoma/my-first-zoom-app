@@ -27,7 +27,7 @@
 
 \+ **new ExpressServer**(): *[ExpressServer](_common_server_.expressserver.md)*
 
-*Defined in [server/common/server.ts:28](https://github.com/waricoma/my-first-zoom-app/blob/ded8f9a/express/server/common/server.ts#L28)*
+Defined in server/common/server.ts:28
 
 **Returns:** *[ExpressServer](_common_server_.expressserver.md)*
 
@@ -37,7 +37,7 @@
 
 ▸ **bodyParserOrLineSignatureParser**(): *function*
 
-*Defined in [server/common/server.ts:49](https://github.com/waricoma/my-first-zoom-app/blob/ded8f9a/express/server/common/server.ts#L49)*
+Defined in server/common/server.ts:49
 
 **Returns:** *function*
 
@@ -57,7 +57,7 @@ ___
 
 ▸ **handleLineEv**(`webHookPath`: string): *Promise‹void›*
 
-*Defined in [server/common/server.ts:64](https://github.com/waricoma/my-first-zoom-app/blob/ded8f9a/express/server/common/server.ts#L64)*
+Defined in server/common/server.ts:64
 
 **Parameters:**
 
@@ -73,7 +73,7 @@ ___
 
 ▸ **listen**(`port`: number): *Promise‹void›*
 
-*Defined in [server/common/server.ts:121](https://github.com/waricoma/my-first-zoom-app/blob/ded8f9a/express/server/common/server.ts#L121)*
+Defined in server/common/server.ts:121
 
 **Parameters:**
 
@@ -89,7 +89,7 @@ ___
 
 ▸ **setBodyParserOrLineSignatureParser**(): *Promise‹void›*
 
-*Defined in [server/common/server.ts:44](https://github.com/waricoma/my-first-zoom-app/blob/ded8f9a/express/server/common/server.ts#L44)*
+Defined in server/common/server.ts:44
 
 **Returns:** *Promise‹void›*
 
@@ -99,7 +99,7 @@ ___
 
 ▸ **setErrPage**(): *Promise‹void›*
 
-*Defined in [server/common/server.ts:96](https://github.com/waricoma/my-first-zoom-app/blob/ded8f9a/express/server/common/server.ts#L96)*
+Defined in server/common/server.ts:96
 
 **Returns:** *Promise‹void›*
 
@@ -109,6 +109,6 @@ ___
 
 ▸ **setNotFoundPage**(): *Promise‹void›*
 
-*Defined in [server/common/server.ts:78](https://github.com/waricoma/my-first-zoom-app/blob/ded8f9a/express/server/common/server.ts#L78)*
+Defined in server/common/server.ts:78
 
 **Returns:** *Promise‹void›*

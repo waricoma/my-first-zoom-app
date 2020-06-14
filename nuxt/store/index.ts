@@ -5,7 +5,7 @@ export const state = () => ({
     indeterminateOfProgressLinear: false,
     snackbarValForZoomApiProgress: false,
     snackbarMsgForZoomApiProgress: '',
-    disabledBtnOfCreateNextWeekRoom: false
+    disabledBtnOfCreateNextWeekRoom: false,
   },
 });
 

@@ -93,8 +93,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn run document && yarn run lint",
-      "pre-push": "yarn run document && yarn run lint"
+      "pre-commit": "yarn run document && yarn run lint && git add --all",
+      "pre-push": "yarn run document && yarn run lint && git add --all"
     }
   },
   "config": {

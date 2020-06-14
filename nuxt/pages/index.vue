@@ -19,7 +19,11 @@
         }}</v-snackbar>
         <v-card-actions>
           <v-spacer />
-          <v-btn color="primary" @click="createNextWeekRoom()" :disabled="disabledBtnOfCreateNextWeekRoom">
+          <v-btn
+            color="primary"
+            :disabled="disabledBtnOfCreateNextWeekRoom"
+            @click="createNextWeekRoom()"
+          >
             Create Room
           </v-btn>
         </v-card-actions>
@@ -107,7 +111,7 @@ export default {
     },
     disabledBtnOfCreateNextWeekRoom() {
       return this.$store.state.index.disabledBtnOfCreateNextWeekRoom;
-    }
+    },
   },
   methods: {
     async createNextWeekRoom() {

@@ -14,7 +14,7 @@
 
 ▸ **errorHandler**(`err`: object, `req`: Request, `res`: Response): *void*
 
-*Defined in [server/api/middlewares/error.handler.ts:3](https://github.com/waricoma/my-first-zoom-app/blob/ded8f9a/express/server/api/middlewares/error.handler.ts#L3)*
+Defined in server/api/middlewares/error.handler.ts:3
 
 **Parameters:**
 
