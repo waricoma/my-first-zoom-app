@@ -1,0 +1,47 @@
+{
+  "name": "my-first-zoom-app_nuxt",
+  "version": "1.0.0",
+  "description": "my-first-zoom-app_nuxt",
+  "author": "waricoma",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --fix --cache --ext .ts,.vue --ignore-path .gitignore . && semistandard --fix ./*.js",
+    "document": "typedoc --plugin typedoc-plugin-markdown --out ./docs/ ./server/",
+    "test:debug": "jest --watch",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.3.6",
+    "@nuxtjs/dotenv": "^1.4.0",
+    "@nuxtjs/pwa": "^3.0.0-0",
+    "nuxt": "^2.0.0",
+    "vue-progressbar": "^0.7.5",
+    "vuejs-dialog": "^1.4.1"
+  },
+  "devDependencies": {
+    "@nuxt/typescript-build": "^0.6.0",
+    "@nuxtjs/eslint-config-typescript": "^1.0.0",
+    "@nuxtjs/eslint-module": "^1.0.0",
+    "@nuxtjs/vuetify": "^1.0.0",
+    "@vue/test-utils": "^1.0.0-beta.27",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^24.1.0",
+    "eslint": "^6.1.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-nuxt": ">=0.4.2",
+    "eslint-plugin-prettier": "^3.1.2",
+    "jest": "^24.1.0",
+    "prettier": "^1.19.1",
+    "sass": "1.26.5",
+    "sass-loader": "8.0.2",
+    "semistandard": "^14.2.0",
+    "ts-jest": "^25.0.0",
+    "typedoc": "0.17.6",
+    "typedoc-plugin-markdown": "2.3.1",
+    "vue-jest": "^4.0.0-0"
+  }
+}

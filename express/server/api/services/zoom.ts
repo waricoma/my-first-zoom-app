@@ -20,7 +20,7 @@ export const nextWeekRoomOpCreator = (
   return roomOp;
 };
 
-export const createNextWeekRoom = async (): Promise<string> => {
+export const createNextWeekRoom = async (): Promise<void> => {
   L.info('create zoom room');
 
   const roomOp = nextWeekRoomOpCreator(
@@ -28,22 +28,20 @@ export const createNextWeekRoom = async (): Promise<string> => {
     process.env.TIMEZONE
   );
 
-  try {
-    const res = await axios.post(
+  const res = await axios
+    .post(
       `https://api.zoom.us/v2/users/${process.env.ZOOM_EMAIL}/meetings`,
       roomOp,
       {
         headers: {
-          authorization: `Bearer ${process.env.ZOOM_JWT_TOKEN}`,
           // TODO: JWT token has the time limit. So, need to develop feature of updating it.
+          authorization: `Bearer ${process.env.ZOOM_JWT_TOKEN}`,
         },
       }
-    );
-
-    return JSON.stringify(res.data);
-  } catch (err) {
-    if (err) {
+    )
+    .catch((err) => {
       throw new Error(err);
-    }
-  }
+    });
+
+  return res.data;
 };

@@ -3,6 +3,7 @@
 # my-first-zoom-app_express
 
 # Welcome to my-first-zoom-app_express 👋
+
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000)
 ![Prerequisite](https://img.shields.io/badge/yarn-%3E%3D1.22.4-blue.svg)
 ![Prerequisite](https://img.shields.io/badge/node-%3E%3D12.16.2-blue.svg)
@@ -42,7 +43,7 @@ yarn run test
 
 👤 **waricoma <waricoma@devne.co>**
 
-* Website: https://wantedly.com/users/18472356
+* Website: <https://wantedly.com/users/18472356>
 * Twitter: [@waritocomatta](https://twitter.com/waritocomatta)
 * Github: [@waricoma](https://github.com/waricoma)
 * LinkedIn: [@motone-adachi-b92955145](https://linkedin.com/in/motone-adachi-b92955145)

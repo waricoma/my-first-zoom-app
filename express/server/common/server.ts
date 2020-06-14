@@ -9,6 +9,7 @@ import L from './logger';
 import { RegisterRoutes } from '../routes';
 import swaggerUi from 'swagger-ui-express';
 import swaggerDocument from './swagger.json';
+import { redirectToHTTPS } from 'express-http-to-https';
 // import * as line from '@line/bot-sdk';
 
 const app = express();
@@ -29,8 +30,9 @@ class ExpressServer {
     const root = path.normalize(__dirname + '/../..');
     app.set('appPath', `${root}client`);
     app.use(helmet());
-    app.use(cookieParser(process.env.SESSION_SECRET));
-    app.use(express.static(`${root}/../vue/dist`));
+    app.use(cookieParser(process.env.SESSION_SECRET || 'mySecret'));
+    app.use(express.static(`${root}/../nuxt/dist`));
+    app.use(redirectToHTTPS([/localhost:(\d{4})/], [/\/insecure/], 301));
 
     // Define app's routing
     RegisterRoutes(app);
@@ -76,6 +78,42 @@ class ExpressServer {
   public async setNotFoundPage(): Promise<void> {
     // 404
     app.use((req, res) => {
+      if (req.xhr) {
+        res.status(404);
+
+        return res.json({
+          method: req.method,
+          protocol: req.protocol,
+          version: req.httpVersion,
+          url: req.url,
+        });
+      }
+
+      res.redirect(301, '/');
+    });
+  }
+
+  public async setErrPage(): Promise<void> {
+    // 500
+    app.use((err, req, res, next) => {
+      console.log(next);
+
+      if (req.xhr) {
+        res.status(500);
+
+        res.json({
+          method: req.method,
+          protocol: req.protocol,
+          version: req.httpVersion,
+          url: req.url,
+          name: err.name,
+          message: err.message,
+          stack: err.stack,
+        });
+
+        return;
+      }
+
       res.redirect(301, '/');
     });
   }

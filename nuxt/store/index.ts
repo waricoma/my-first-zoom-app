@@ -1,0 +1,27 @@
+// import home from '@/store/home';
+
+export const state = () => ({
+  index: {
+    indeterminateOfProgressLinear: false,
+    snackbarValForZoomApiProgress: false,
+    snackbarMsgForZoomApiProgress: '',
+  },
+});
+
+export const mutations = {
+  makeTrueIndeterminateOfProgressLinear(state: any) {
+    state.index.indeterminateOfProgressLinear = true;
+  },
+  makeFalseIndeterminateOfProgressLinear(state: any) {
+    state.index.indeterminateOfProgressLinear = false;
+  },
+  makeTrueSnackbarValForZoomApiProgress(state: any) {
+    state.index.snackbarValForZoomApiProgress = true;
+  },
+  makeFalseSnackbarValForZoomApiProgress(state: any) {
+    state.index.snackbarValForZoomApiProgress = false;
+  },
+  changeSnackbarMsgForZoomApiProgress(state: any, newMsg: string) {
+    state.index.snackbarMsgForZoomApiProgress = newMsg;
+  },
+};

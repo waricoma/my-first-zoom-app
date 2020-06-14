@@ -22,7 +22,19 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "string"
+                  "properties": {
+                    "join_url": {
+                      "type": "string"
+                    },
+                    "password": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "password",
+                    "join_url"
+                  ],
+                  "type": "object"
                 }
               }
             },

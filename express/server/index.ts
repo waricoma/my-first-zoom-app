@@ -1,18 +1,18 @@
 import './common/env';
+import { expressServer } from './common/server';
 // import { createConnection } from 'typeorm';
 
-const config = {
-  channelAccessToken: process.env.LINE_CH_ACCESS_TOKEN,
-  channelSecret: process.env.LINE_CH_SECRET,
-};
+// const config = {
+//   channelAccessToken: process.env.LINE_CH_ACCESS_TOKEN.toString(),
+//   channelSecret: process.env.LINE_CH_SECRET.toString(),
+// };
 
 const port = parseInt(process.env.PORT);
 
 /* createConnection().then(*/ (async (): Promise<void> => {
-  const server = require('./common/server').expressServer;
-
-  await server.setBodyParserOrLineSignatureParser(config);
-  // await server.handleLineEv('/webhook/line/', config);
-  await server.setNotFoundPage();
-  await server.listen(port);
+  await expressServer.setBodyParserOrLineSignatureParser(/* config */);
+  // await expressServer.handleLineEv('/webhook/line/', config);
+  await expressServer.setNotFoundPage();
+  // await expressServer.setErrPage();
+  await expressServer.listen(port);
 })();

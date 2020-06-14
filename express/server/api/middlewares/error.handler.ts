@@ -1,7 +1,7 @@
 import { Request, Response /* , NextFunction */ } from 'express';
 
 export default function errorHandler(
-  err,
+  err: { errors; message: string; status: number },
   req: Request,
   res: Response /* ,
   next: NextFunction */
