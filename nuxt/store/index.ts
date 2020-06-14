@@ -5,6 +5,7 @@ export const state = () => ({
     indeterminateOfProgressLinear: false,
     snackbarValForZoomApiProgress: false,
     snackbarMsgForZoomApiProgress: '',
+    disabledBtnOfCreateNextWeekRoom: false
   },
 });
 
@@ -23,5 +24,11 @@ export const mutations = {
   },
   changeSnackbarMsgForZoomApiProgress(state: any, newMsg: string) {
     state.index.snackbarMsgForZoomApiProgress = newMsg;
+  },
+  enableBtnOfCreateNextWeekRoom(state: any) {
+    state.index.disabledBtnOfCreateNextWeekRoom = false;
+  },
+  disableBtnOfCreateNextWeekRoom(state: any) {
+    state.index.disabledBtnOfCreateNextWeekRoom = true;
   },
 };

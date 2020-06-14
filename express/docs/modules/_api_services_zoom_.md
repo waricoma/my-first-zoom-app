@@ -6,16 +6,26 @@
 
 ### Functions
 
+* [createNextWeekRoom](_api_services_zoom_.md#const-createnextweekroom)
 * [nextWeekRoomOpCreator](_api_services_zoom_.md#const-nextweekroomopcreator)
-* [run](_api_services_zoom_.md#const-run)
 
 ## Functions
+
+### `Const` createNextWeekRoom
+
+▸ **createNextWeekRoom**(): *Promise‹void›*
+
+*Defined in [server/api/services/zoom.ts:23](https://github.com/waricoma/my-first-zoom-app/blob/ded8f9a/express/server/api/services/zoom.ts#L23)*
+
+**Returns:** *Promise‹void›*
+
+___
 
 ### `Const` nextWeekRoomOpCreator
 
 ▸ **nextWeekRoomOpCreator**(`topic?`: string, `timeZone?`: string): *object*
 
-*Defined in [server/api/services/zoom.ts:5](https://github.com/waricoma/my-first-zoom-app/blob/9d66697/express/server/api/services/zoom.ts#L5)*
+*Defined in [server/api/services/zoom.ts:5](https://github.com/waricoma/my-first-zoom-app/blob/ded8f9a/express/server/api/services/zoom.ts#L5)*
 
 **Parameters:**
 
@@ -27,13 +37,3 @@ Name | Type |
 **Returns:** *object*
 
 * \[ **key**: *string*\]: string | object
-
-___
-
-### `Const` run
-
-▸ **run**(): *Promise‹string›*
-
-*Defined in [server/api/services/zoom.ts:23](https://github.com/waricoma/my-first-zoom-app/blob/9d66697/express/server/api/services/zoom.ts#L23)*
-
-**Returns:** *Promise‹string›*

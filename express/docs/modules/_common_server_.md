@@ -22,7 +22,7 @@
 
 • **app**: *Express‹›* = express()
 
-*Defined in [server/common/server.ts:14](https://github.com/waricoma/my-first-zoom-app/blob/9d66697/express/server/common/server.ts#L14)*
+*Defined in [server/common/server.ts:15](https://github.com/waricoma/my-first-zoom-app/blob/ded8f9a/express/server/common/server.ts#L15)*
 
 ___
 
@@ -32,7 +32,7 @@ ___
   limit: process.env.REQUEST_LIMIT || '100kb',
 })
 
-*Defined in [server/common/server.ts:16](https://github.com/waricoma/my-first-zoom-app/blob/9d66697/express/server/common/server.ts#L16)*
+*Defined in [server/common/server.ts:17](https://github.com/waricoma/my-first-zoom-app/blob/ded8f9a/express/server/common/server.ts#L17)*
 
 #### Type declaration:
 
@@ -54,7 +54,7 @@ ___
   limit: process.env.REQUEST_LIMIT || '100kb',
 })
 
-*Defined in [server/common/server.ts:23](https://github.com/waricoma/my-first-zoom-app/blob/9d66697/express/server/common/server.ts#L23)*
+*Defined in [server/common/server.ts:24](https://github.com/waricoma/my-first-zoom-app/blob/ded8f9a/express/server/common/server.ts#L24)*
 
 #### Type declaration:
 
@@ -77,7 +77,7 @@ ___
   limit: process.env.REQUEST_LIMIT || '100kb',
 })
 
-*Defined in [server/common/server.ts:19](https://github.com/waricoma/my-first-zoom-app/blob/9d66697/express/server/common/server.ts#L19)*
+*Defined in [server/common/server.ts:20](https://github.com/waricoma/my-first-zoom-app/blob/ded8f9a/express/server/common/server.ts#L20)*
 
 #### Type declaration:
 
@@ -97,4 +97,4 @@ ___
 
 • **expressServer**: *[ExpressServer](../classes/_common_server_.expressserver.md)‹›* = new ExpressServer()
 
-*Defined in [server/common/server.ts:95](https://github.com/waricoma/my-first-zoom-app/blob/9d66697/express/server/common/server.ts#L95)*
+*Defined in [server/common/server.ts:133](https://github.com/waricoma/my-first-zoom-app/blob/ded8f9a/express/server/common/server.ts#L133)*

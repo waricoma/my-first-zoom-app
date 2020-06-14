@@ -43,7 +43,7 @@ yarn run test
 
 👤 **waricoma <waricoma@devne.co>**
 
-* Website: <https://wantedly.com/users/18472356>
+* Website: <https://www.wantedly.com/users/18472356>
 * Twitter: [@waritocomatta](https://twitter.com/waritocomatta)
 * Github: [@waricoma](https://github.com/waricoma)
 * LinkedIn: [@motone-adachi-b92955145](https://linkedin.com/in/motone-adachi-b92955145)

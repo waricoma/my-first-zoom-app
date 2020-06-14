@@ -25,7 +25,7 @@
     "node": ">=12.16.2"
   },
   "scripts": {
-    "start": "yarn run generate-nuxt && start-express",
+    "start": "yarn run generate-nuxt && yarn run start-express",
     "start-express": "cd ./express && yarn install && yarn run build && yarn run start",
     "generate-nuxt": "cd ./nuxt && yarn install && yarn run generate",
     "commit": "git cz",
@@ -93,8 +93,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn run lint",
-      "pre-push": "yarn run lint"
+      "pre-commit": "yarn run document && yarn run lint",
+      "pre-push": "yarn run document && yarn run lint"
     }
   },
   "config": {

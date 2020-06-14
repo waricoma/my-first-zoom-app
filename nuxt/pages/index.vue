@@ -19,11 +19,9 @@
         }}</v-snackbar>
         <v-card-actions>
           <v-spacer />
-          <div @click="createNextWeekRoom()">
-            <v-btn color="primary">
-              Create Room
-            </v-btn>
-          </div>
+          <v-btn color="primary" @click="createNextWeekRoom()" :disabled="disabledBtnOfCreateNextWeekRoom">
+            Create Room
+          </v-btn>
         </v-card-actions>
       </v-card>
       <div class="text-center">
@@ -107,9 +105,13 @@ export default {
     snackbarMsgForZoomApiProgress() {
       return this.$store.state.index.snackbarMsgForZoomApiProgress;
     },
+    disabledBtnOfCreateNextWeekRoom() {
+      return this.$store.state.index.disabledBtnOfCreateNextWeekRoom;
+    }
   },
   methods: {
     async createNextWeekRoom() {
+      this.$store.commit('disableBtnOfCreateNextWeekRoom');
       this.$store.commit('makeTrueSnackbarValForZoomApiProgress');
 
       const res = await axios
@@ -124,11 +126,13 @@ export default {
             'changeSnackbarMsgForZoomApiProgress',
             'Error😢 [zoom next week room creating]'
           );
+          this.$store.commit('enableBtnOfCreateNextWeekRoom');
           this.$store.commit('makeTrueSnackbarValForZoomApiProgress');
 
           throw new Error(err);
         });
 
+      this.$store.commit('enableBtnOfCreateNextWeekRoom');
       this.$store.commit('makeFalseIndeterminateOfProgressLinear');
 
       this.$dialog

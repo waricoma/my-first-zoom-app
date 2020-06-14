@@ -19,7 +19,7 @@
 
 • **models**: *Models*
 
-*Defined in [server/routes.ts:11](https://github.com/waricoma/my-first-zoom-app/blob/9d66697/express/server/routes.ts#L11)*
+*Defined in [server/routes.ts:11](https://github.com/waricoma/my-first-zoom-app/blob/ded8f9a/express/server/routes.ts#L11)*
 
 ___
 
@@ -27,7 +27,7 @@ ___
 
 • **validationService**: *ValidationService‹›* = new ValidationService(models)
 
-*Defined in [server/routes.ts:13](https://github.com/waricoma/my-first-zoom-app/blob/9d66697/express/server/routes.ts#L13)*
+*Defined in [server/routes.ts:13](https://github.com/waricoma/my-first-zoom-app/blob/ded8f9a/express/server/routes.ts#L13)*
 
 ## Functions
 
@@ -35,7 +35,7 @@ ___
 
 ▸ **RegisterRoutes**(`app`: express.Express): *void*
 
-*Defined in [server/routes.ts:17](https://github.com/waricoma/my-first-zoom-app/blob/9d66697/express/server/routes.ts#L17)*
+*Defined in [server/routes.ts:17](https://github.com/waricoma/my-first-zoom-app/blob/ded8f9a/express/server/routes.ts#L17)*
 
 **Parameters:**
 
