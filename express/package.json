@@ -44,7 +44,7 @@
     "dotenv": "8.2.0",
     "express": "4.17.1",
     "express-http-to-https": "1.1.4",
-    "helmet": "3.23.1",
+    "helmet": "3.23.2",
     "moment": "2.27.0",
     "pino": "6.3.2",
     "tsoa": "2.5.14"
