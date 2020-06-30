@@ -76,7 +76,7 @@
     "generator-express-no-stress-typescript": "9.0.0",
     "husky": "4.2.5",
     "markdownlint": "0.20.4",
-    "markdownlint-cli": "0.23.1",
+    "markdownlint-cli": "0.23.2",
     "nodemon-webpack-plugin": "4.3.2",
     "readme-md-generator": "1.0.0",
     "textlint": "11.6.3",
