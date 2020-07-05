@@ -6,6 +6,7 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/waricoma/my-first-zoom-app/graphs/commit-activity)
 [![License: MIT](https://img.shields.io/github/license/waricoma/my-first-zoom-app)](https://github.com/waricoma/my-first-zoom-app/blob/master/LICENSE)
 [![Twitter: waritocomatta](https://img.shields.io/twitter/follow/waritocomatta.svg?style=social)](https://twitter.com/waritocomatta)
+[![waricoma](https://circleci.com/gh/waricoma/my-first-zoom-app.svg?style=svg)](https://app.circleci.com/pipelines/github/waricoma/my-first-zoom-app)
 
 > This system will create the room for next week from now.
 
