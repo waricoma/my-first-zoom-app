@@ -120,7 +120,7 @@ export default {
 
       const res = await axios
         .get(`${location.origin}/api/zoom/create`)
-        .catch(err => {
+        .catch((err) => {
           // this.$nuxt.error({
           //   statusCode: err.response.status,
           //   message: err.response.message,

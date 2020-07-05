@@ -17,7 +17,7 @@ services:
       - ./:/work
       - app_pkg:/work/node_modules
       - express_pkg:/work/express/node_modules
-      - nuxt_pkg:/work/vue/node_modules
+      - nuxt_pkg:/work/nuxt/node_modules
     container_name: app
 
   # postgres:
