@@ -23,7 +23,7 @@
     "vuejs-dialog": "1.4.1"
   },
   "devDependencies": {
-    "@nuxt/typescript-build": "2.0.0",
+    "@nuxt/typescript-build": "2.0.2",
     "@nuxtjs/eslint-config-typescript": "2.0.0",
     "@nuxtjs/eslint-module": "2.0.0",
     "@nuxtjs/vuetify": "1.11.2",
