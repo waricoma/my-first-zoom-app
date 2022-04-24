@@ -1,4 +1,4 @@
-FROM node:12.18.2-alpine
+FROM node:12.22.12-alpine
 ENV TZ=Asia/Tokyo
 
 WORKDIR /work/
